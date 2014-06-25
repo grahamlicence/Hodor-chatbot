@@ -23,10 +23,12 @@
 		}
 		hodor:nth-of-type(2) {
 			display: inline-block;
+			margin-right: 1em;
+			vertical-align: top;
 		}
 		hodor:nth-of-type(3) {
-			width: 100px;
-			height: 20px;
+			width: 200px;
+			min-height: 20px;
 			border: solid 1px;
 			display: inline-block;
 		}
@@ -49,30 +51,33 @@
     	function hodorHodor () {
     		hodor.innerHTML = hodorhodorhodorhodor;
     		hodor.scrollTop = hodor.scrollHeight;
+    		hodorhodorhodor.setAttribute('contentEditable', true);
+    		hodorhodorhodor.focus();
     	}
 
     	function hodorHodorHodorHodor () {
-    		var l = parseInt(Math.random() * 10),
-    			h = 'hodor ',
-    			r = '';
-		 	for (var i = 0; i < l; i+=1) {
-		 		r += 'hodor ';
+    		var h = parseInt(Math.random() * 10),
+    			o = 'hodor ',
+    			d = '';
+		 	for (var r = 0; r < h; r += 1) {
+		 		d += 'hodor ';
 		 	}
-    		hodorhodorhodorhodor += '> ' + r + '\r';
-    		setTimeout(hodorHodor, l * 100);
+    		hodorhodorhodorhodor += '> ' + d + '\r';
+    		setTimeout(hodorHodor, h * 100);
     	}
 
     	function hodorHodorHodor () {
-    		var q = hodorhodorhodor.innerHTML,
-    		 	l = q.split(' ').length - 1,
+    		var h = hodorhodorhodor.innerHTML,
+    		 	o = h.split(' ').length - 1,
     		 	r = 'hodor ';
 
-		 	for (var i = 0; i < l; i+=1) {
+		 	for (var i = 0; i < o; i+=1) {
 		 		r += 'hodor ';
 		 	}
     		hodorhodorhodor.innerHTML = '';
     		hodorhodorhodorhodor += '* ' + r + '\r';
     		hodorHodor();
+    		hodorhodorhodor.setAttribute('contentEditable', false);
     		hodorHodorHodorHodor();
     	}
 
