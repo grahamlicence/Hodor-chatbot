@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <title>Hodor chatbot</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <script>
+    	document.createElement('hodor');
+	</script>
+
+	<style type="text/css">
+
+		hodor:nth-of-type(1) {
+			display: block;
+			border: solid 1px;
+			width: 300px;
+			height: 500px;
+			margin-bottom: 1em;
+			white-space: pre-line;
+			overflow: hidden;
+		}
+		hodor:nth-of-type(2) {
+			display: inline-block;
+		}
+		hodor:nth-of-type(3) {
+			width: 100px;
+			height: 20px;
+			border: solid 1px;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+
+    <hodor>
+
+    </hodor>
+    <hodor>Hodor:</hodor>
+	<hodor contenteditable></hodor>
+
+    <script>
+    	var hodor = document.querySelectorAll('hodor')[0],
+    		hodorhodor = document.querySelectorAll('hodor')[1],
+    		hodorhodorhodor = document.querySelectorAll('hodor')[2],
+    		hodorhodorhodorhodor = '> Hodor?\r';
+
+    	function hodorHodor () {
+    		hodor.innerHTML = hodorhodorhodorhodor;
+    		hodor.scrollTop = hodor.scrollHeight;
+    	}
+
+    	function hodorHodorHodorHodor () {
+    		var l = parseInt(Math.random() * 10),
+    			h = 'hodor ',
+    			r = '';
+		 	for (var i = 0; i < l; i+=1) {
+		 		r += 'hodor ';
+		 	}
+    		hodorhodorhodorhodor += '> ' + r + '\r';
+    		setTimeout(hodorHodor, l * 100);
+    	}
+
+    	function hodorHodorHodor () {
+    		var q = hodorhodorhodor.innerHTML,
+    		 	l = q.split(' ').length - 1,
+    		 	r = 'hodor ';
+
+		 	for (var i = 0; i < l; i+=1) {
+		 		r += 'hodor ';
+		 	}
+    		hodorhodorhodor.innerHTML = '';
+    		hodorhodorhodorhodor += '* ' + r + '\r';
+    		hodorHodor();
+    		hodorHodorHodorHodor();
+    	}
+
+    	hodorhodorhodor.addEventListener('keypress', function (e) {
+    		if (e.keyCode === 13) {
+    			e.preventDefault();
+    			hodorHodorHodor();
+    		}
+    	})
+
+
+
+    	hodorHodor();
+    	// * User text
+    	// > reply
+    </script>
+</body>
+</html>
