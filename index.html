@@ -5,94 +5,92 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Hodor hodor hodor HODOR." />
 
     <script>
-    	document.createElement('hodor');
-	</script>
+    document.createElement('hodor');
+    </script>
 
-	<style type="text/css">
+    <style type="text/css">
 
-		hodor:nth-of-type(1) {
-			display: block;
-			border: solid 1px;
-			width: 300px;
-			height: 500px;
-			margin-bottom: 1em;
-			white-space: pre-line;
-			overflow: hidden;
-		}
-		hodor:nth-of-type(2) {
-			display: inline-block;
-			margin-right: 1em;
-			vertical-align: top;
-		}
-		hodor:nth-of-type(3) {
-			width: 200px;
-			min-height: 20px;
-			border: solid 1px;
-			display: inline-block;
-		}
-	</style>
+        hodor:nth-of-type(1) {
+            display: block;
+            border: solid 1px;
+            width: 300px;
+            height: 500px;
+            margin-bottom: 1em;
+            white-space: pre-line;
+            overflow: hidden;
+        }
+        hodor:nth-of-type(2) {
+            display: inline-block;
+            margin-right: 1em;
+            vertical-align: top;
+        }
+        hodor:nth-of-type(3) {
+            width: 200px;
+            min-height: 20px;
+            border: solid 1px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
 
-    <hodor>
-
-    </hodor>
-    <hodor>Hodor:</hodor>
-	<hodor contenteditable></hodor>
+    <hodor></hodor>
+    <hodor>Hodor: </hodor>
+    <hodor></hodor>
 
     <script>
-    	var hodor = document.querySelectorAll('hodor')[0],
-    		hodorhodor = document.querySelectorAll('hodor')[1],
-    		hodorhodorhodor = document.querySelectorAll('hodor')[2],
-    		hodorhodorhodorhodor = '> Hodor?\r';
+    var hodor = document.querySelectorAll('hodor')[0],
+        hodorhodor = document.querySelectorAll('hodor')[1],
+        hodorhodorhodor = document.querySelectorAll('hodor')[2],
+        hodorhodorhodorhodor = '> Hodor?\r';
 
-    	function hodorHodor () {
-    		hodor.innerHTML = hodorhodorhodorhodor;
-    		hodor.scrollTop = hodor.scrollHeight;
-    		hodorhodorhodor.setAttribute('contentEditable', true);
-    		hodorhodorhodor.focus();
-    	}
+    function hodorHodor () {
+        hodor.innerHTML = hodorhodorhodorhodor;
+        hodor.scrollTop = hodor.scrollHeight;
+        hodorhodorhodor.setAttribute('contentEditable', true);
+        hodorhodorhodor.focus();
+    }
 
-    	function hodorHodorHodorHodor () {
-    		var h = parseInt(Math.random() * 10),
-    			o = 'hodor ',
-    			d = '';
-		 	for (var r = 0; r < h; r += 1) {
-		 		d += 'hodor ';
-		 	}
-    		hodorhodorhodorhodor += '> ' + d + '\r';
-    		setTimeout(hodorHodor, h * 100);
-    	}
+    function hodorHodorHodorHodor () {
+        var h = parseInt(Math.random() * 10),
+            o = 'hodor ',
+            d = '';
+            for (var r = 0; r < h; r += 1) {
+                d += 'hodor ';
+            }
+            if (Math.random() < 0.25) {
+                d += 'HODOR ';
+            }
+        hodorhodorhodorhodor += '> ' + d + '\r';
+        setTimeout(hodorHodor, h * 100);
+    }
 
-    	function hodorHodorHodor () {
-    		var h = hodorhodorhodor.innerHTML,
-    		 	o = h.split(' ').length - 1,
-    		 	r = 'hodor ';
+    function hodorHodorHodor () {
+        var h = hodorhodorhodor.innerHTML,
+            o = h.split(' ').length - 1,
+            r = 'hodor ';
 
-		 	for (var i = 0; i < o; i+=1) {
-		 		r += 'hodor ';
-		 	}
-    		hodorhodorhodor.innerHTML = '';
-    		hodorhodorhodorhodor += '* ' + r + '\r';
-    		hodorHodor();
-    		hodorhodorhodor.setAttribute('contentEditable', false);
-    		hodorHodorHodorHodor();
-    	}
+            for (var i = 0; i < o; i+=1) {
+                r += 'hodor ';
+            }
+        hodorhodorhodor.innerHTML = '';
+        hodorhodorhodorhodor += '* ' + r + '\r';
+        hodorHodor();
+        hodorhodorhodor.setAttribute('contentEditable', false);
+        hodorHodorHodorHodor();
+    }
 
-    	hodorhodorhodor.addEventListener('keypress', function (e) {
-    		if (e.keyCode === 13) {
-    			e.preventDefault();
-    			hodorHodorHodor();
-    		}
-    	})
+    hodorhodorhodor.addEventListener('keypress', function (HODOR) {
+        if (HODOR.keyCode === 13) {
+            HODOR.preventDefault();
+            hodorHodorHodor();
+        }
+    });
 
-
-
-    	hodorHodor();
-    	// * User text
-    	// > reply
+    hodorHodor();
     </script>
 </body>
 </html>
