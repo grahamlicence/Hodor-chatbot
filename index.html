@@ -5,7 +5,8 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Hodor hodor hodor HODOR." />
+    <meta name="description" content="Hodor Hodor Hodor HODOR." />
+    <meta name="hodor" content="Hodor" />
 
     <script>
     document.createElement('hodor');
@@ -14,24 +15,36 @@
     <style type="text/css">
 
         hodor:nth-of-type(1) {
-            display: block;
             border: solid 1px;
-            width: 300px;
-            height: 500px;
+            display: block;
+            height: 400px;
             margin-bottom: 1em;
-            white-space: pre-line;
             overflow: hidden;
+            white-space: pre-line;
+            width: 300px;
         }
         hodor:nth-of-type(2) {
             display: inline-block;
             margin-right: 1em;
+            position: relative;
             vertical-align: top;
         }
         hodor:nth-of-type(3) {
-            width: 200px;
-            min-height: 20px;
             border: solid 1px;
             display: inline-block;
+            min-height: 20px;
+            width: 200px;
+        }
+        .hodor:before {
+            background: white;
+            color: blue;
+            content: "Hodor Hodor ..";
+            font-style: italic;
+            left: 1px;
+            padding-left: 1em;
+            position: absolute;
+            top: -37px;
+            width: 280px;
         }
     </style>
 </head>
@@ -42,26 +55,31 @@
     <hodor></hodor>
 
     <script>
-    var hodor = document.querySelectorAll('hodor')[0],
-        hodorhodor = document.querySelectorAll('hodor')[1],
-        hodorhodorhodor = document.querySelectorAll('hodor')[2],
+    var HodorHodor = document.querySelectorAll('hodor'),
+        hodor = HodorHodor[0],
+        hodorhodor = HodorHodor[1],
+        hodorhodorhodor = HodorHodor[2],
         hodorhodorhodorhodor = '> Hodor?\r';
 
     function hodorHodor () {
         hodor.innerHTML = hodorhodorhodorhodor;
         hodor.scrollTop = hodor.scrollHeight;
         hodorhodorhodor.setAttribute('contentEditable', true);
+        hodorhodor.className = '';
+        // hodorhodor.className = 'hodor';
         hodorhodorhodor.focus();
     }
 
     function hodorHodorHodorHodor () {
         var h = parseInt(Math.random() * 10),
-            o = 'hodor ',
+            o = 'Hodor ',
             d = '';
             for (var r = 0; r < h; r += 1) {
-                d += 'hodor ';
+                d += 'Hodor ';
             }
-            if (Math.random() < 0.25) {
+            if (!h) {
+                d += 'Hordor??? ';
+            } else if (Math.random() < 0.25) {
                 d += 'HODOR ';
             }
         hodorhodorhodorhodor += '> ' + d + '\r';
@@ -71,22 +89,25 @@
     function hodorHodorHodor () {
         var h = hodorhodorhodor.innerHTML,
             o = h.split(' ').length - 1,
-            r = 'hodor ';
+            r = 'Hodor ';
 
-            for (var i = 0; i < o; i+=1) {
-                r += 'hodor ';
+            for (var d = 0; d < o; d+=1) {
+                r += 'Hodor ';
             }
         hodorhodorhodor.innerHTML = '';
         hodorhodorhodorhodor += '* ' + r + '\r';
         hodorHodor();
         hodorhodorhodor.setAttribute('contentEditable', false);
+        hodorhodor.className = 'hodor';
         hodorHodorHodorHodor();
     }
 
     hodorhodorhodor.addEventListener('keypress', function (HODOR) {
         if (HODOR.keyCode === 13) {
             HODOR.preventDefault();
-            hodorHodorHodor();
+            if (hodorhodorhodor.innerHTML.length) {
+                hodorHodorHodor();
+            }
         }
     });
 
