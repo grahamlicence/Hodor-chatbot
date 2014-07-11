@@ -28,6 +28,7 @@
             margin-right: 1em;
             position: relative;
             vertical-align: top;
+            margin-bottom: 3em;
         }
         hodor:nth-of-type(3) {
             border: solid 1px;
@@ -46,6 +47,42 @@
             top: -37px;
             width: 280px;
         }
+
+        /* GitHub banner */
+        .footnote {
+            background: rgba(255, 255, 255, 0.8);
+            bottom: 0;
+            color: #000;
+            font-family: Arial;
+            font-size: 1rem;
+            left: 0;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0.1em;
+            position: fixed;
+            text-align: center;
+            width: 100%;
+        }
+        .github {
+            color: #4183c4;
+            display: inline-block;
+            text-decoration: none;
+            vertical-align: top;
+        }
+        .github:hover,
+        .github:focus {
+            text-decoration: underline;
+        }
+        .github:before {
+            background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjVweCI+DQogIDxkZWZzPg0KICAgIDxnIGlkPSJpbWFnZSIgdHJhbnNmb3JtPSJzY2FsZSgwLjEyNSwtMC4xMjUpIj4NCiAgICAgIDxwYXRoIGQ9Ik01MTIgODMyYy0yODMgMC01MTItMjI5LTUxMi01MTIgMC0yMjYgMTQ3LTQxOCAzNTAtNDg2IDI2LTUgMzUgMTEgMzUgMjUgMCAxMiAwIDUzLTEgOTUtMTQyLTMxLTE3MiA2MC0xNzIgNjAtMjMgNTktNTcgNzUtNTcgNzUtNDcgMzIgNCAzMSA0IDMxIDUxLTQgNzgtNTMgNzgtNTMgNDYtNzggMTIwLTU2IDE0OS00MyA1IDMzIDE4IDU2IDMzIDY4LTExNCAxMy0yMzMgNTctMjMzIDI1MyAwIDU2IDIwIDEwMiA1MyAxMzctNSAxMy0yMyA2NSA1IDEzNiAwIDAgNDMgMTQgMTQxLTUzIDQxIDExIDg1IDE3IDEyOCAxNyA0NCAwIDg3LTYgMTI4LTE3IDk4IDY2IDE0MSA1MyAxNDEgNTMgMjgtNzEgMTAtMTIzIDUtMTM2IDMzLTM2IDUzLTgxIDUzLTEzNyAwLTE5Ny0xMjAtMjQwLTIzNC0yNTMgMTgtMTYgMzUtNDcgMzUtOTUgMC02OC0xLTEyNC0xLTE0MSAwLTE0IDktMzAgMzUtMjUgMjAzIDY4IDM1MCAyNjAgMzUwIDQ4NiAwIDI4My0yMjkgNTEyLTUxMiA1MTJ6IiAvPg0KICAgIDwvZz4NCiAgPC9kZWZzPg0KDQogIDx1c2UgeGxpbms6aHJlZj0iI2ltYWdlIiB4PSIwIiB5PSIxMDQiIGZpbGw9IiMwMDAiLz4NCjwvc3ZnPg==) no-repeat 0 0;
+            background-size: contain;
+            content: "";
+            display: inline-block;
+            height: 15px;
+            margin-right: 0.5rem;
+            margin-top: 0.1rem;
+            width: 15px;
+        }
     </style>
 </head>
 <body>
@@ -54,6 +91,8 @@
     <hodor>Hodor: </hodor>
     <hodor></hodor>
 
+
+    <hodor class="footnote">Experiment by Graham Licence. <a href="https://github.com/grahamlicence/colour-names" class="github">Fork me on GitHub</a></hodor>
     <script>
     var HodorHodor = document.querySelectorAll('hodor'),
         hodor = HodorHodor[0],
