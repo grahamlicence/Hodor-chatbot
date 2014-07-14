@@ -13,9 +13,9 @@
     </script>
 
     <style type="text/css">
-
+        html {background:#000;color: rgb(0, 255, 0);}
         hodor:nth-of-type(1) {
-            border: solid 1px;
+            border: solid 1px rgb(0, 255, 0);
             display: block;
             height: 400px;
             margin-bottom: 1em;
@@ -34,11 +34,15 @@
             border: solid 1px;
             display: inline-block;
             min-height: 20px;
+            padding-left: 0.2em;
             width: 200px;
         }
+        hodor:nth-of-type(3):focus {
+            outline-color: rgb(0, 255, 0);
+        }
         .hodor:before {
-            background: white;
-            color: blue;
+            background: rgba(255,255,255,0.2);
+            color: rgb(0, 255, 0);
             content: "Hodor Hodor ..";
             font-style: italic;
             left: 1px;
@@ -105,7 +109,6 @@
         hodor.scrollTop = hodor.scrollHeight;
         hodorhodorhodor.setAttribute('contentEditable', true);
         hodorhodor.className = '';
-        // hodorhodor.className = 'hodor';
         hodorhodorhodor.focus();
     }
 
